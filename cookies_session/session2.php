@@ -1,27 +1,23 @@
 <?php
-
-session_start();
-
-
+    session_start();
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./session.css">
     <title>Document</title>
 </head>
+
 <body>
-    
-    <?php if ($_SESSION["is_logged"]): ?>
+    <?php if ($_SESSION["is_logged"]) : ?>
         <h1 class="h1-admin">Vítejte v administraci</h1>
     <?php else : ?>
         <h1 class="h1-neadmin">Nemáte oprávnění pro vstup do administrace</h1>
     <?php endif; ?>
-    
-
 </body>
+
 </html>
